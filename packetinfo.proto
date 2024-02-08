@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package wscap;
+
+option go_package = "/wscap";
+
+message PacketInfo {
+  string sourceIP = 1;
+  string destinationIP = 2;
+  string protocol = 3;
+  int32 size = 4;
+  string tcpFlags = 5;
+  int32 sourcePort = 6;
+  int32 destinationPort = 7;
+}
